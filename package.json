@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://github.com/PandeCode/anode",
+	"homepage": "https://pandecode.github.io/anode/",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
