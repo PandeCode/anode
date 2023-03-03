@@ -134,7 +134,6 @@ export default function Home({ }: HomeProps) {
 								}}
 							>
 								<Flex gap={"md"}>
-									<Tooltip label="Select Type" withArrow>
 										<ActionIcon
 											title="Select Type"
 											onClick={() => {
@@ -142,7 +141,7 @@ export default function Home({ }: HomeProps) {
 												setTypeChooserOpen(false);
 											}}
 										>
-											<IconDeviceTv />{" "}
+											<IconDeviceTv />
 										</ActionIcon>
 										<ActionIcon
 											onClick={() => {
@@ -150,9 +149,8 @@ export default function Home({ }: HomeProps) {
 												setTypeChooserOpen(false);
 											}}
 										>
-											<IconBook />{" "}
+											<IconBook />
 										</ActionIcon>
-									</Tooltip>
 								</Flex>
 							</Popover.Dropdown>
 						</Popover>
