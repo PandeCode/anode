@@ -6,7 +6,7 @@ import {
 	IconSettings,
 } from "@tabler/icons";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Settings from "./components/Settings";
@@ -21,7 +21,7 @@ export default function App() {
 	const [settingsOpened, setSettingsOpened] = useState(false);
 
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<SettingsContext.Provider value={settings}>
 				<ThemeProvider>
 					<Flex direction={"column"}>
@@ -60,6 +60,6 @@ export default function App() {
 					</Flex>
 				</ThemeProvider>
 			</SettingsContext.Provider>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
