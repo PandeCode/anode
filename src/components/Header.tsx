@@ -93,7 +93,7 @@ export default function HeaderSimple({ links }: HeaderSimpleProps) {
 	return (
 		<Header height={60} style={{ position: "absolute", top: 0, left: 0 }}>
 			<Container className={classes.header}>
-				<img width={32} height={32} src="/favicon-32x32.png" />
+				<img width={32} height={32} src="https://pandecode.github.io/anode/favicon-32x32.png" />
 				<Group spacing={5} className={classes.links}>
 					{links.map((link) => (
 						<a
