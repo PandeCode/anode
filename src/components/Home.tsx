@@ -6,6 +6,7 @@ import {
 	Popover,
 	Text,
 	TextInput,
+	Tooltip,
 } from "@mantine/core";
 import {
 	IconArrowLeft,
@@ -133,22 +134,25 @@ export default function Home({ }: HomeProps) {
 								}}
 							>
 								<Flex gap={"md"}>
-									<ActionIcon
-										onClick={() => {
-											setType("ANIME");
-											setTypeChooserOpen(false);
-										}}
-									>
-										<IconDeviceTv />{" "}
-									</ActionIcon>
-									<ActionIcon
-										onClick={() => {
-											setType("MANGA");
-											setTypeChooserOpen(false);
-										}}
-									>
-										<IconBook />{" "}
-									</ActionIcon>
+									<Tooltip label="Select Type" withArrow>
+										<ActionIcon
+											title="Select Type"
+											onClick={() => {
+												setType("ANIME");
+												setTypeChooserOpen(false);
+											}}
+										>
+											<IconDeviceTv />{" "}
+										</ActionIcon>
+										<ActionIcon
+											onClick={() => {
+												setType("MANGA");
+												setTypeChooserOpen(false);
+											}}
+										>
+											<IconBook />{" "}
+										</ActionIcon>
+									</Tooltip>
 								</Flex>
 							</Popover.Dropdown>
 						</Popover>
